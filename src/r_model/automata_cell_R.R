@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript
 # -----------------------------------------------------------------------
 #                   MODELO DE AUTOMATA CELULAR
 # Codigo basado en:
@@ -8,8 +9,8 @@
 library(sp)
 
 # Defino las dimensiones de la muestra
-width <- 2^5
-depth <- width/2
+width <- 1000
+depth <- 100
 
 # La clase GridTopology tiene como argumentos:
 #             cellcentre = Coordenadas del centro
@@ -27,6 +28,8 @@ z <- data.frame(status=sample(0:0, width, replace=T))
 z[width/2, 1] <- 1
 z[width/2+1, 1] <- 1
 
+# Start the clock!
+start.time <- Sys.time()
 
 for (i in (width+1):(width*depth))
 {
@@ -42,6 +45,12 @@ for (i in (width+1):(width*depth))
   z<-rbind(z,nr)
 }
 
+# Stop the Clock
+end.time <- Sys.time()
 
+print(end.time-start.time)
+
+# Print
 sgdf = SpatialGridDataFrame(gt, z)
 image(sgdf, col=c("white", "black"))
+
