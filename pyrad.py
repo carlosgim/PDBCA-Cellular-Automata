@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 '''
-Created on 28 de May 2016
-
 @author: Carlos A. Gimenez
 '''
 import src.geom_pr.dsquare
@@ -27,7 +25,5 @@ class run_each_photon:
     
 #    for value in range(1,n):
 #      print (value)
-      
-    
-        
+           
 run_each_photon()
