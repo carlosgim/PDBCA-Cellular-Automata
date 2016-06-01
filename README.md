@@ -24,7 +24,7 @@ Written by:
 
 ## Contact ##
 
-Contact: www.carlosagimenez.com/contact
+Contact: www.carlosagimenez.com
 
 ## References ##
 
