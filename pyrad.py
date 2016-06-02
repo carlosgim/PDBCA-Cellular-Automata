@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-@author: Carlos A. Gimenez
+@authors: ...
 '''
 import src.geom_pr.dsquare
 
