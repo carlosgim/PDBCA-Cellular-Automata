@@ -20,7 +20,7 @@ module tg_functions
 
 
   type :: tg_variables
-    integer :: ntest
+    integer :: i
     character(len=50) :: title
   end type tg_variables
 

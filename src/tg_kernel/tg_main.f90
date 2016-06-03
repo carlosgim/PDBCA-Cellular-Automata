@@ -1,6 +1,6 @@
 !--------------------------------------------------------------------------
 !REFERENCIA
-!
+! 
 !---------------------------------------------------------------------------
 !DATOS
 !---------------------------------------------------------------------------
@@ -8,10 +8,9 @@ program tg_kernel
   use tg_functions; use constants
 
 implicit none
-real(kind=8) :: x
-integer,dimension(100) :: conteo
-real(kind=8) :: N,Z
-integer(kind=8) :: i,j
+integer, parameter :: dp = selected_real_kind(15,307)
+real(kind=dp) :: x
+integer :: i,j
 
 
 
