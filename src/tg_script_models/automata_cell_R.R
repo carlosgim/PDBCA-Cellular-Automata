@@ -9,7 +9,7 @@
 library(sp)
 
 # Defino las dimensiones de la muestra
-width <- 1000
+width <- 100	
 depth <- 100
 
 # La clase GridTopology tiene como argumentos:
