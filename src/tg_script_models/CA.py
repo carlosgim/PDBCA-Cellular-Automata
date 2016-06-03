@@ -9,8 +9,6 @@ The following is a one dimensional cellular automata program. It creates an arra
 #%%Call modules.
 #-----------------------------------------------------------------------------------------------------------------------
 import numpy as np
-import matplotlib.pyplot as plt
-
 
 #-----------------------------------------------------------------------------------------------------------------------
 #%%Initialize variables.
