@@ -21,7 +21,7 @@ if (WWD == '4'):
 
   print '+++ Set the environment +++'
 
-  os.system('git remote add upstream https://github.com/dcamposliz/dataScience_stockMarket.git')
+  os.system('git remote add upstream https://github.com/carlosgim/TG-Cellular-Automaton.git')
 
   os.system('git remote -v')
 

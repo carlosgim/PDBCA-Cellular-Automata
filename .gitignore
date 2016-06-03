@@ -1,2 +1,5 @@
-src/tg_kernel/a.out
+src/tg_kernel/CMakeFiles
+src/tg_kernel/Makefile
+src/tg_kernel/bin
+src/tg_kernel/lib/
 *.pyc
