@@ -10,17 +10,17 @@ program tg_kernel
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)
 !real(kind=dp), allocatable :: x(:), x_old(:)
-integer, allocatable :: x(:), x_old(:)
+character, allocatable :: x(:), x_old(:)
 integer :: i, j, step_num, n
 
 ! Set initial parameters
-n = 80; step_num = 2
+n = 80; step_num = 50
 
 ! Allocate the size of the array
 allocate( x(0:n+1)); allocate( x_old(0:n+1))
 
-x(0:n+1) = 0
-x(40)    = 1
+x(0:n+1) = ' '
+x(40)    = '*'
 
 step_numbers: do i = 1, step_num
 
@@ -28,24 +28,24 @@ step_numbers: do i = 1, step_num
 
     size_array: do j = 1, n
 
-        if (( x_old(j-1) == 0 .and. &
-              x_old(j)   == 0 .and. &
-              x_old(j+1) == 1 )     &
+        if (( x_old(j-1) == ' ' .and. &
+              x_old(j)   == ' ' .and. &
+              x_old(j+1) == '*' )     &
               .or. &
-            ( x_old(j-1) == 0 .and.  &
-              x_old(j)   == 1 .and.  &
-              x_old(j+1) == 0 )      &
+            ( x_old(j-1) == '*' .and.  &
+              x_old(j)   == ' ' .and.  &
+              x_old(j+1) == ' ' )      &
                .or. &
-            ( x_old(j-1) == 0 .and.  &
-              x_old(j)   == 1 .and.  &
-              x_old(j+1) == 0 )      &
+            ( x_old(j-1) == ' ' .and.  &
+              x_old(j)   == '*' .and.  &
+              x_old(j+1) == ' ' )      &
                 .or. &
-            ( x_old(j-1) == 1 .and.  &
-              x_old(j)  == 0 .and.   &
-              x_old(j+1) == 1 ) ) then
-              x(j) = 1
+            ( x_old(j-1) == '*' .and.  &
+              x_old(j)  ==  ' ' .and.   &
+              x_old(j+1) == ' ' ) ) then
+              x(j) = '*'
         else
-              x(j) = 0
+              x(j) = ' '
         end if
 
     end do size_array
@@ -56,7 +56,7 @@ step_numbers: do i = 1, step_num
     
 ! Print
     write(*,*) 'step', step_num
-    write(*,'(2I3)') x(1:n)              
+    write(*,'(80a)') x(1:n)              
     
 end do step_numbers
 
