@@ -14,7 +14,6 @@ class run_each_photon:
     """
     print "Choose photons or electrons"
 
-    print "2: Photons"
     print "1: Electrons"
     proces = raw_input("write 1 or 2 ")
     
