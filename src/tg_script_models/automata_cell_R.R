@@ -1,5 +1,6 @@
 #!/usr/bin/env Rscript
 # -----------------------------------------------------------------------
+
 #                   MODELO DE AUTOMATA CELULAR
 # Codigo basado en:
 # http://www.r-bloggers.com/cellular-automata-the-beauty-of-simplicity/
