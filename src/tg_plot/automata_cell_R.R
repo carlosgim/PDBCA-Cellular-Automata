@@ -3,8 +3,8 @@
 #                   MODELO DE AUTOMATA CELULAR
 # Codigo basado en:
 # http://www.r-bloggers.com/cellular-automata-the-beauty-of-simplicity/
+#Franco
 # -----------------------------------------------------------------------
-
 # Se importa la libreria sp
 library(sp)
 
