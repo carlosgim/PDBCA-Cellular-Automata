@@ -3,7 +3,12 @@
 @author: Carlos A. Gimenez
  
 '''
+import sys
 import src.tg_kernel as core
+
+if sys.version < '2.4':
+    print('pam requires python version >= 2.4')
+    sys.exit(1)
 
 class prepare_kernel:
   """
@@ -12,6 +17,6 @@ class prepare_kernel:
   def __init__(self):
     print "Choose photons or electrons"
            
-    core.set_enviroment()
+    core.set_enviroment().__install__()
 
 prepare_kernel()

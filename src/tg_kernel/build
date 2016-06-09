@@ -6,7 +6,7 @@
    
     Written by Carlos A. Gimenez, Natural and Exact Science Faculty
                                   Northeastern University of Argentina,
-        			  Corrientes, Argentina
+        			              Corrientes, Argentina
    
     Contributors: --
    
@@ -14,29 +14,28 @@
              DIRTIMEOUT        - time out limit for TG-Cellular-Automation run
           
 """
-
+ 
 import os
 import sys
 
-if sys.version < '2.4':
-    print('pam requires python version >= 2.4')
-    sys.exit(1)
-
 class set_enviroment:
   """
-  class for handling the TG-Cellular-Automation run
+  class for handling the  TG-Cellular-Automation setup
   """
   def __init__(self):
     """
     Initialize the global set of variables
     """
-  def main_run(self):
-    src = os.getcwd() 
+  def __install__(self):
+    os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
+    print "runing cmake"
+    os.system("make")
+    print "done"
+  
+  def __clean__(self):
     os.system("cmake -P distclean.cmake")
     print "runing cmake clean"
     os.system("make distclean")
     print "done"
 
-set_enviroment().main_run()
-
-print "The TG-Cellular-Automation was cleaned"
+print "The TG-Cellular-Automation code is ready, enjoy your meal"
