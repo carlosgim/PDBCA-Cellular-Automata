@@ -31,11 +31,10 @@ class set_enviroment:
     """
     Initialize the global set of variables
     """
-  def main_run(self):
     src = os.getcwd() 
     os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
     print "runing cmake"
     os.system("make")
     print "done"
-set_enviroment().main_run()
+
 print "The TG-Cellular-Automation code is ready, enjoy your meal"

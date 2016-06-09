@@ -1,28 +1,17 @@
 #!/usr/bin/env python
 '''
-@authors: ...
+@author: Carlos A. Gimenez
+ 
 '''
-import src.geom_pr.dsquare
+import src.tg_kernel as core
 
-class run_each_photon:
+class prepare_kernel:
   """
-  class for running in each photon
+  Set the kernel code
   """
   def __init__(self):
-    """
-    Initialize the global set of variables
-    """
     print "Choose photons or electrons"
-
-    print "1: Electrons"
-    proces = raw_input("write 1 or 2 ")
-    
-    src.geom_pr.dsquare.spamfun()
-
-    print "You choose %s" % (proces)
-    n = 100
-    
-#    for value in range(1,n):
-#      print (value)
            
-run_each_photon()
+    core.set_enviroment()
+
+prepare_kernel()
