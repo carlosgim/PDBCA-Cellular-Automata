@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+'''
+@author: Carlos A. Gimenez
+ 
+'''
+import tg_kernel as core
+
+class tg_set:
+  """
+  Set the kernel code
+  """
+  def __init__(self):
+           
+    core.set_enviroment()
+
+tg_set()
