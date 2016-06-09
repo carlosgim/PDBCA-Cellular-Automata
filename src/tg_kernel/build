@@ -17,11 +17,6 @@
  
 import os
 import sys
-import subprocess
-
-if sys.version < '2.4':
-    print('pam requires python version >= 2.4')
-    sys.exit(1)
 
 class set_enviroment:
   """
@@ -31,11 +26,16 @@ class set_enviroment:
     """
     Initialize the global set of variables
     """
-  def main_run(self):
-    src = os.getcwd() 
+  def __install__(self):
     os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
     print "runing cmake"
     os.system("make")
     print "done"
-set_enviroment().main_run()
+  
+  def __clean__(self):
+    os.system("cmake -P distclean.cmake")
+    print "runing cmake clean"
+    os.system("make distclean")
+    print "done"
+
 print "The TG-Cellular-Automation code is ready, enjoy your meal"
