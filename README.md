@@ -1,6 +1,6 @@
 # TG-Automata-Rad #
 
-[TG-Automata-Rad] - Version 1.0 01/05/2016
+[TG-Automata-Rad] - Version 1.0 07/06/2016
 
 A simple algorithm for study a thumor growth under the effect of radiation
    
