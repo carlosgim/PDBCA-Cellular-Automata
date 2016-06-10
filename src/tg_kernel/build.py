@@ -23,17 +23,17 @@ class set_enviroment:
     """
     Initialize the global set of variables
     """
+  def __chdir__(self):
+    self.path = os.getcwd()+"/src/tg_kernel"
+    os.chdir(self.path)
+
   def __install__(self):
-    path = os.getcwd()+"/src/tg_kernel"
-    os.chdir(path)
     os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
     print "runing cmake"
     os.system("make")
     print "done"
   
   def __clean__(self):
-    path = os.getcwd()+"/src/tg_kernel"
-    os.chdir(path)
     os.system("cmake -P distclean.cmake")
     print "runing cmake clean"
     os.system("make distclean")

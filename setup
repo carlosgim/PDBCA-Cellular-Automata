@@ -8,29 +8,36 @@
         			              Corrientes, Argentina
    
 '''
+import os
 import sys
 import os.path as path
 
 if sys.version < '2.4':
-    print('pam requires python version >= 2.4')
-    sys.exit(1)
+   print('pam requires python version >= 2.4')
+   sys.exit(1)
 
 class prepare_kernel:
-  """
-  Set the kernel code
-  """
-   self.build_path = os.getcwd()+"/src/tg_kernel/bin"
+   """
+   Set the kernel code
+   """
 
    def __init__(self):
+   
+      self.build_path = os.getcwd()+"/src/tg_kernel/bin"
+      
+      print self.build_path
 
       import src.tg_kernel.build as setenv 
 
       if os.path.exists(self.build_path):
-
+         setenv.set_enviroment().__chdir__()
          setenv.set_enviroment().__clean__()
+         print "Wait..."
+         setenv.set_enviroment().__install__()
+         print "done!"
 
       else:
-
+         setenv.set_enviroment().__chdir__()
          setenv.set_enviroment().__install__()
 
 prepare_kernel()
