@@ -1,22 +1,67 @@
 #!/usr/bin/env python
 '''
-@author: Carlos A. Gimenez
- 
+    Setup script for TG-Cellular-Automation calculations.
+  
+   
+    Written by Carlos A. Gimenez, Natural and Exact Science Faculty
+                                  Northeastern University of Argentina,
+        			              Corrientes, Argentina
+   
 '''
+import os
 import sys
-import src.tg_kernel as core
+import os.path as path
 
 if sys.version < '2.4':
-    print('pam requires python version >= 2.4')
-    sys.exit(1)
+   print('pam requires python version >= 2.4')
+   sys.exit(1)
 
 class prepare_kernel:
+   """
+   Set the kernel code
+   """
+
+   def __init__(self):
+   
+      self.build_path = os.getcwd()+"/src/tg_kernel/bin"
+      
+      print self.build_path
+
+      import src.tg_kernel.build as setenv 
+
+      if os.path.exists(self.build_path):
+         setenv.set_enviroment().__chdir__()
+         setenv.set_enviroment().__clean__()
+         print "Wait..."
+         setenv.set_enviroment().__install__()
+         print "done!"
+
+      else:
+         setenv.set_enviroment().__chdir__()
+         setenv.set_enviroment().__install__()
+
+class set_enviroment:
   """
-  Set the kernel code
+  class for handling the  TG-Cellular-Automation setup
   """
   def __init__(self):
-    print "Choose photons or electrons"
-           
-    core.set_enviroment().__install__()
+    """
+    Initialize the global set of variables
+    """
+  def __chdir__(self):
+    self.path = os.getcwd()+"/src/tg_kernel"
+    os.chdir(self.path)
+
+  def __install__(self):
+    os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
+    print "runing cmake"
+    os.system("make")
+    print "done"
+  
+  def __clean__(self):
+    os.system("cmake -P distclean.cmake")
+    print "runing cmake clean"
+    os.system("make distclean")
+    print "done"
 
 prepare_kernel()
