@@ -1,6 +1,6 @@
 !=============================================================================
 !This module computes a set of rules for the cellular automata. Till the moment
-!is just an sketch
+!is just a sketch.
 ! 
 !=============================================================================
 ! Name: Santiago Walterio, Wiedmann
@@ -22,15 +22,15 @@ read*, step_num
 allocate (state(n,n,4))
 allocate (temp(n,n))
 
-do l = 1,n
+fill_row: do l = 1,n
 
-    do m = 1,n
+    fill_columm: do m = 1,n
 
-        temp(l,m) = 0
+                     temp(l,m) = 0
 
-    end do
+                 end fill_columm
 
-end do
+           end fill_row
 
 !Set the rules
 step_numbers: do t = 1, step_num
@@ -41,8 +41,8 @@ step_numbers: do t = 1, step_num
 
         x_rnd = random(1:n)
         y_rnd = random(1:n)
-        x_rnd = i
-        y_rnd = j
+        i = x_rnd
+        j = y_rnd
 
         if ( temp(i,j) == 0 ) then
             temp(i,j) = 1
@@ -170,7 +170,7 @@ step_numbers: do t = 1, step_num
 
 
 !========================================================================================
-!                                      
+!                                      DEAD CELL
 !========================================================================================
               else 
 
