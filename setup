@@ -11,6 +11,7 @@
 import os
 import sys
 import os.path as path
+import shutil
 
 if sys.version < '2.4':
    print('pam requires python version >= 2.4')
@@ -27,18 +28,16 @@ class prepare_kernel:
       
       print self.build_path
 
-      import src.tg_kernel.build as setenv 
-
       if os.path.exists(self.build_path):
-         setenv.set_enviroment().__chdir__()
-         setenv.set_enviroment().__clean__()
+         set_enviroment().__chdir__()
+         set_enviroment().__clean__()
          print "Wait..."
-         setenv.set_enviroment().__install__()
+         set_enviroment().__install__()
          print "done!"
 
       else:
-         setenv.set_enviroment().__chdir__()
-         setenv.set_enviroment().__install__()
+         set_enviroment().__chdir__()
+         set_enviroment().__install__()
 
 class set_enviroment:
   """
@@ -56,7 +55,10 @@ class set_enviroment:
     os.system("cmake -DCMAKE_BUILD_TYPE=RELEASE")
     print "runing cmake"
     os.system("make")
-    print "done"
+    up_two = path.abspath(path.join(__file__ ,"../../../"))
+    print "up_two:", up_two
+    shutil.copy(os.getcwd()+"/bin/tg_kernel", up_two) 
+    print "done - Enjoy your meal..."
   
   def __clean__(self):
     os.system("cmake -P distclean.cmake")
