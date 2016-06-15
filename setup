@@ -27,18 +27,16 @@ class prepare_kernel:
       
       print self.build_path
 
-      import src.tg_kernel.build as setenv 
-
       if os.path.exists(self.build_path):
-         setenv.set_enviroment().__chdir__()
-         setenv.set_enviroment().__clean__()
+         set_enviroment().__chdir__()
+         set_enviroment().__clean__()
          print "Wait..."
-         setenv.set_enviroment().__install__()
+         set_enviroment().__install__()
          print "done!"
 
       else:
-         setenv.set_enviroment().__chdir__()
-         setenv.set_enviroment().__install__()
+         set_enviroment().__chdir__()
+         set_enviroment().__install__()
 
 class set_enviroment:
   """
