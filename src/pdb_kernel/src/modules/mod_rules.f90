@@ -9,18 +9,25 @@
 module mod_rules
 
 implicit none
-real :: prob_m, prob_ij, prob_0, prob_e, acid_0, acid_c, acid_ij, grwth_0, grwth_c, grwth_ij, 
-integer :: i, j, k, l, m, n, t, time, step_num,
-real, dimension(:,:,4) :: state
+public  :: rules_init
+real :: prob_m, prob_ij, prob_0, prob_e, acid_0, acid_c, acid_ij, grwth_0, grwth_c, grwth_ij 
+integer :: i, j, k, l, m, n, t, time, step_num
+real, dimension(:,:,:) :: state
 real, dimension(:,:) :: temp
 
+contains
+
 !Set initial parameters
-print*, "introduce the state matrix dimension, please "
-read*, n
-print*, "introduce the step number, please "
-read*, step_num
-allocate (state(n,n,4))
-allocate (temp(n,n))
+subroutine rules_init
+
+print*, "introduce the state matrix dimension, please"
+!read*, n
+!print*, "introduce the step number, please "
+!read*, step_num
+n=4
+
+allocate(state(n,n,4))
+allocate(temp(n,n))
 
 fill_row: do l = 1,n
 
@@ -28,19 +35,19 @@ fill_row: do l = 1,n
 
                      temp(l,m) = 0
 
-     end fill_columm
+     end do fill_columm
 
-end fill_row
+end do fill_row
 
 !Set the rules
 step_numbers: do t = 1, step_num
 
     k = 0
 
-    while k <= n**2 then
+    do while (k <= n**2) 
 
-        x_rnd = random(1:n)
-        y_rnd = random(1:n)
+        x_rnd = rand()*n
+        y_rnd = rand()*n
         i = x_rnd
         j = y_rnd
 
@@ -308,4 +315,5 @@ step_numbers: do t = 1, step_num
 
 end do
 
+end subroutine rules_init 
 end module mod_rules 
