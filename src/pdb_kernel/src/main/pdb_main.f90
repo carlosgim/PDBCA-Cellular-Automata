@@ -7,10 +7,10 @@
 program pdb_main
   use mod_functions
   use mod_constants
+!  use mod_rules
 
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)
-!real(kind=dp), allocatable :: x(:), x_old(:)
 character, allocatable :: x(:,:), x_old(:,:)
 integer :: i, j, k, step_num, n
 

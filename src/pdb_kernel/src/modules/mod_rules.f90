@@ -4,7 +4,7 @@
 !---------------------------------------------------------------------------
 !DATOS
 !---------------------------------------------------------------------------
-program tg_kernel
+module mod_rules
 
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)
@@ -64,6 +64,6 @@ step_numbers: do i = 1, step_num
 end do step_numbers
 
       stop
-end program tg_kernel
+end module mod_rules
      
   
