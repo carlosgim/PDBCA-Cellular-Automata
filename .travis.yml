@@ -1,9 +1,12 @@
-language: python
+language: python, Fortran90
 
 branches:
   only:
   - master 
-     
+  
+before_install:
+  - sudo apt-get install gfortran
+  
 install:
   - "./setup"
 
