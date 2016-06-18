@@ -43,7 +43,3 @@ for i in range(size/2):
   Print(grid)
   grid = update(grid)
 
-   
-
-   
-        

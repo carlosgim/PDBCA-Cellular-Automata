@@ -1,0 +1,12 @@
+language: python, fortran90
+
+branches:
+  only:
+     - master 
+
+before_install:
+  - sudo apt-get install cmake
+
+install:
+	- "./setup"
+
