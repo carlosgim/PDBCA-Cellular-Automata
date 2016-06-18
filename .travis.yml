@@ -1,4 +1,4 @@
-language: python, Fortran90
+language: python
 
 branches:
   only:
