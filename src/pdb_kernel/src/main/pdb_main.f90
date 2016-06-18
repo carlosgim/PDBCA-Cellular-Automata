@@ -4,8 +4,9 @@
 !---------------------------------------------------------------------------
 !DATOS
 !---------------------------------------------------------------------------
-program tg_kernel
-  use tg_functions; use constants
+program pdb_main
+  use mod_functions
+  use mod_constants
 
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)
@@ -65,6 +66,6 @@ step_numbers: do i = 1, step_num
 end do step_numbers
 
       stop
-end program tg_kernel
+end program pdb_main
      
   

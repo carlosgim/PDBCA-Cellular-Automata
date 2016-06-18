@@ -1,4 +1,4 @@
-module tg_functions
+module mod_functions
 !================================================================================!
 ! Initializacion of all variables 
 !================================================================================!
@@ -37,4 +37,4 @@ contains
   end subroutine test
 
 
-end module tg_functions
+end module mod_functions

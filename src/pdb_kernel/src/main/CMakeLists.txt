@@ -3,7 +3,7 @@
 ########################################
 
 # Add the source files
-SET(FOO_src ${SRCFOO}/tg_main.f90
+SET(FOO_src ${SRCFOO}/pdb_main.f90
 )
 
 # Define the executable in terms of the source files
