@@ -1,7 +1,9 @@
 src/pdb_kernel/CMakeFiles
+src/pdb_kernel/CMakeCache.txt
+src/pdb_kernel/cmake_install.cmake
 src/pdb_kernel/Makefile
 src/pdb_kernel/bin
-src/pdb_kernel/lib/
+src/pdb_kernel/lib
 *.pyc
 *.swp
 pdb_run.x
