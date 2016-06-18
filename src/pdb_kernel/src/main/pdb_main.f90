@@ -7,6 +7,7 @@
 program pdb_main
   use mod_functions
   use mod_constants
+  use mod_rules
 
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)

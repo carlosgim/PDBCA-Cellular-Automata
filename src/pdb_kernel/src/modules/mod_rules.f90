@@ -6,7 +6,7 @@
 ! Name: Santiago Walterio, Wiedmann
 ! Date: 
 !=============================================================================
-program mod_rules
+module mod_rules
 
 implicit none
 real :: prob_m, prob_ij, prob_0, prob_e, acid_0, acid_c, acid_ij, grwth_0, grwth_c, grwth_ij, 
@@ -307,4 +307,5 @@ step_numbers: do t = 1, step_num
 
 
 end do
-     
+
+end module mod_rules 
