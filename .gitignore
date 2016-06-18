@@ -1,7 +1,7 @@
-src/tg_kernel/CMakeFiles
-src/tg_kernel/Makefile
-src/tg_kernel/bin
-src/tg_kernel/lib/
+src/pdb_kernel/CMakeFiles
+src/pdb_kernel/Makefile
+src/pdb_kernel/bin
+src/pdb_kernel/lib/
 *.pyc
 *.swp
-*~
+pdb_run.x

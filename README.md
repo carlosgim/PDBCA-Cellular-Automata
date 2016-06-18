@@ -40,3 +40,4 @@ Contact: www.carlosagimenez.com
 
 ## Licence ##
 
+MIT 2015

@@ -1,0 +1,1 @@
+/usr/bin/f95      -fno-underscoring -march=native -O3 -funroll-loops -finline-functions -flto CMakeFiles/pdb_run.x.dir/pdb_main.f90.o  -o pdb_run.x -rdynamic ../lib/libmodules.a 

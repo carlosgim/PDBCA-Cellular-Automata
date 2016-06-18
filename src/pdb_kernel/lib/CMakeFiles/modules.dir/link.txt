@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmodules.a  CMakeFiles/modules.dir/mod_functions.f90.o CMakeFiles/modules.dir/mod_constants.f90.o
+/usr/bin/ranlib libmodules.a

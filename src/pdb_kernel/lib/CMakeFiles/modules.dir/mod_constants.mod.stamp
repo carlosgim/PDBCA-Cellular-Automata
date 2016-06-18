@@ -1,0 +1,234 @@
+GFORTRAN module version '10' created from /home/carlosgim/Documents/dev_active_projects/PDBCA-project/src/pdb_kernel/src/modules/mod_constants.f90
+MD5:c4bf92c1ba162362f630b03d7328314d -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+()
+
+(2 'cmplx' '(intrinsic)' '' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN 0 0 FUNCTION) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 2 ()
+() () 0 0)
+3 'eight' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.80000000000000@1') () 0 () () () 0 0)
+4 'eighteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.12000000000000@2') () 0 () () () 0
+0)
+5 'eleven' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.b0000000000000@1') () 0 () () () 0 0)
+6 'fifteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.f0000000000000@1') () 0 () () () 0 0)
+7 'five' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.50000000000000@1') () 0 () () () 0 0)
+8 'five_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.50000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+9 'fortyeight' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.30000000000000@2') () 0 () () () 0
+0)
+10 'four' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.40000000000000@1') () 0 () () () 0 0)
+11 'four_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.40000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+12 'fourteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.e0000000000000@1') () 0 () () () 0
+0)
+13 'fourth' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.40000000000000@0') () 0 () () () 0 0)
+14 'fourthird' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.15555555555555@1') () 0 () () () 0
+0)
+15 'half' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.80000000000000@0') () 0 () () () 0 0)
+16 'half_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.80000000000000@0'
+'0.00000000000000@0') () 0 () () () 0 0)
+17 'hundred' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.64000000000000@2') () 0 () () () 0
+0)
+18 'hundred_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0
+() (CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.64000000000000@2'
+'0.00000000000000@0') () 0 () () () 0 0)
+19 'i_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.00000000000000@0'
+'0.10000000000000@1') () 0 () () () 0 0)
+20 'kind' '(intrinsic)' '' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN 0 0 FUNCTION) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 20
+() () () 0 0)
+21 'kindr' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '8') () 0 () () () 0 0)
+22 'mod_constants' 'mod_constants' '' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () ()
+0 () () () 0 0)
+23 'nine' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.90000000000000@1') () 0 () () () 0 0)
+24 'nineteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.13000000000000@2') () 0 () () () 0
+0)
+25 'one' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.10000000000000@1') () 0 () () () 0 0)
+26 'one_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.10000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+27 'pi' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.3243f6a8885a30@1') () 0 () () () 0 0)
+28 'seven' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.70000000000000@1') () 0 () () () 0 0)
+29 'seventeen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.11000000000000@2') () 0 () () () 0
+0)
+30 'seventytwo' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.48000000000000@2') () 0 () () () 0
+0)
+31 'six' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.60000000000000@1') () 0 () () () 0 0)
+32 'six_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.60000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+33 'sixteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.10000000000000@2') () 0 () () () 0
+0)
+34 'sixth' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.2aaaaaaaaaaaaa@0') () 0 () () () 0 0)
+35 'sqrtpi' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.1c5bf891b4ef6a@1') () 0 () () () 0 0)
+36 'sqrttwoinvpi' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.cc42299ea1b288@0') () 0 () () () 0
+0)
+37 'stderr' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '0') () 0 () () () 0 0)
+38 'stdin' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') () 0 () () () 0 0)
+39 'stdout' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '6') () 0 () () () 0 0)
+40 'ten' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.a0000000000000@1') () 0 () () () 0 0)
+41 'third' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.55555555555554@0') () 0 () () () 0 0)
+42 'thirteen' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.d0000000000000@1') () 0 () () () 0
+0)
+43 'thirtysix' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.24000000000000@2') () 0 () () () 0
+0)
+44 'thirtytwo' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.20000000000000@2') () 0 () () () 0
+0)
+45 'three' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.30000000000000@1') () 0 () () () 0 0)
+46 'three_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0
+() (CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.30000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+47 'threefourth' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.c0000000000000@0') () 0 () () () 0
+0)
+48 'threesecond' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.18000000000000@1') () 0 () () () 0
+0)
+49 'twelve' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.c0000000000000@1') () 0 () () () 0 0)
+50 'twenty' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.14000000000000@2') () 0 () () () 0 0)
+51 'twentyfour' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.18000000000000@2') () 0 () () () 0
+0)
+52 'twentytwo' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.16000000000000@2') () 0 () () () 0
+0)
+53 'two' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.20000000000000@1') () 0 () () () 0 0)
+54 'two_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.20000000000000@1'
+'0.00000000000000@0') () 0 () () () 0 0)
+55 'twoinvpi' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.a2f9836e4e4418@0') () 0 () () () 0
+0)
+56 'twoinvsqrtpi' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.120dd750429b6d@1') () 0 () () () 0
+0)
+57 'twothird' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (
+CONSTANT (REAL 8 0 0 0 REAL ()) 0 '0.aaaaaaaaaaaaa8@0') () 0 () () () 0
+0)
+58 'zero' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 8 0 0 0 REAL ()) 0 '0.00000000000000@0') () 0 () () () 0 0)
+59 'zero_c' 'mod_constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (COMPLEX 8 0 0 0 COMPLEX ()) 0 0 () (
+CONSTANT (COMPLEX 8 0 0 0 COMPLEX ()) 0 '0.00000000000000@0'
+'0.00000000000000@0') () 0 () () () 0 0)
+)
+
+('cmplx' 0 2 'eight' 0 3 'eighteen' 0 4 'eleven' 0 5 'fifteen' 0 6 'five'
+0 7 'five_c' 0 8 'fortyeight' 0 9 'four' 0 10 'four_c' 0 11 'fourteen' 0
+12 'fourth' 0 13 'fourthird' 0 14 'half' 0 15 'half_c' 0 16 'hundred' 0
+17 'hundred_c' 0 18 'i_c' 0 19 'kind' 0 20 'kindr' 0 21 'mod_constants'
+0 22 'nine' 0 23 'nineteen' 0 24 'one' 0 25 'one_c' 0 26 'pi' 0 27 'seven'
+0 28 'seventeen' 0 29 'seventytwo' 0 30 'six' 0 31 'six_c' 0 32 'sixteen'
+0 33 'sixth' 0 34 'sqrtpi' 0 35 'sqrttwoinvpi' 0 36 'stderr' 0 37 'stdin'
+0 38 'stdout' 0 39 'ten' 0 40 'third' 0 41 'thirteen' 0 42 'thirtysix' 0
+43 'thirtytwo' 0 44 'three' 0 45 'three_c' 0 46 'threefourth' 0 47
+'threesecond' 0 48 'twelve' 0 49 'twenty' 0 50 'twentyfour' 0 51
+'twentytwo' 0 52 'two' 0 53 'two_c' 0 54 'twoinvpi' 0 55 'twoinvsqrtpi'
+0 56 'twothird' 0 57 'zero' 0 58 'zero_c' 0 59)
