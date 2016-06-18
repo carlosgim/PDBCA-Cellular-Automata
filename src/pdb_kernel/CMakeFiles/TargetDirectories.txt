@@ -1,3 +1,0 @@
-/home/carlosgim/Documents/dev_active_projects/PDBCA-project/src/pdb_kernel/CMakeFiles/distclean.dir
-/home/carlosgim/Documents/dev_active_projects/PDBCA-project/src/pdb_kernel/lib/CMakeFiles/modules.dir
-/home/carlosgim/Documents/dev_active_projects/PDBCA-project/src/pdb_kernel/bin/CMakeFiles/pdb_run.x.dir

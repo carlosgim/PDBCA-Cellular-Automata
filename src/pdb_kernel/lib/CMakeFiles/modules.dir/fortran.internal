@@ -1,4 +1,0 @@
-# The fortran modules provided by this target.
-provides
- mod_constants
- mod_functions
