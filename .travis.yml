@@ -6,7 +6,9 @@ branches:
   
 before_install:
   - sudo apt-get install gfortran
-  
-install:
-  - "./setup"
+
+install: true
+
+script: 
+  - setup
 
