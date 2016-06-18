@@ -24,11 +24,11 @@ Writen by:
 
 - Install:
 
-   $ ./setup
+	$ ./setup
 
 - Run code:
 
-   $ pdb_run.x
+	$ ./pdb_run.x
 
 ## Contact ##
 
