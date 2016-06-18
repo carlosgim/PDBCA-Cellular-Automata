@@ -16,7 +16,11 @@ mensaje = 'git commit -m '+ "'msens'"
 
 os.system(mensaje)
 
-push = 'git push origin '+ 'Franco'
+pull = "git pull origin Franco"
+
+push = 'git push origin Franco'
+
+os.system(pull)
 
 os.system(push)
 
