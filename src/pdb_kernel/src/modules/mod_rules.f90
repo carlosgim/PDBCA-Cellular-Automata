@@ -10,21 +10,23 @@ module mod_rules
 
 implicit none
 public  :: rules_init
-real :: prob_m, prob_ij, prob_0, prob_e, acid_0, acid_c, acid_ij, grwth_0, grwth_c, grwth_ij 
-integer :: i, j, k, l, m, n, t, time, step_num
-real, dimension(:,:,:) :: state
-real, dimension(:,:) :: temp
 
 contains
 
 !Set initial parameters
 subroutine rules_init
 
+implicit none
+real :: prob_m, prob_ij, prob_0, prob_e, acid_0, acid_c, acid_ij, grwth_0
+real :: grwth_c, grwth_ij, x_rnd, y_rnd
+integer :: i, j, k, l, m, n, t, time, step_num
+real, allocatable, dimension(:,:,:) :: state
+real, allocatable, dimension(:,:) :: temp
+
 print*, "introduce the state matrix dimension, please"
-!read*, n
-!print*, "introduce the step number, please "
-!read*, step_num
-n=4
+read*, n
+print*, "introduce the step number, please "
+read*, step_num
 
 allocate(state(n,n,4))
 allocate(temp(n,n))
@@ -44,7 +46,7 @@ step_numbers: do t = 1, step_num
 
     k = 0
 
-    do while (k <= n**2) 
+    k_reach: do while (k <= n**2) 
 
         x_rnd = rand()*n
         y_rnd = rand()*n
@@ -58,8 +60,8 @@ step_numbers: do t = 1, step_num
 !                                      LIVING CELLS
 !========================================================================================
 
-	    if      ( state(i,j,4) == 2       .and. &
-       	              acid_ij <= acid_0 )      then
+            if      ( state(i,j,4) == 2       .and. &
+                     acid_ij <= acid_0 )      then
                       state(i,j,4) = 1
                       state(i,j,3) = grwth_0
 
@@ -74,7 +76,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_0 )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 3
                       state(i,j,3) = grwth_0
 
@@ -89,7 +91,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_0 )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 4
                       state(i,j,3) = grwth_0
 
@@ -104,7 +106,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_0 )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 5
                       state(i,j,3) = grwth_0
 
@@ -189,7 +191,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_c )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 7
                       state(i,j,3) = grwth_c
 
@@ -204,7 +206,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_c )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 8
                       state(i,j,3) = grwth_c
 
@@ -219,7 +221,7 @@ step_numbers: do t = 1, step_num
                       state(i,j+1,4) == 1      .or. &
                       state(i+1,j+1,4) == 1 ) .and. &
                     ( acid_ij >= acid_c )     .and. &
-                    ( prob_0 <= prob_ij )      then
+                    ( prob_0 <= prob_ij ))      then
                       state(i,j,4) = 9
                       state(i,j,3) = grwth_c
 
@@ -278,10 +280,6 @@ step_numbers: do t = 1, step_num
                       state(i+1,j+1,4) = 6
                       state(i,j,3) = grwth_c
                       state(i+1,j+1,3) = grwth_c
-
-            else 
-
-
             end if 
 !========================================================================================
 !                                      NECTROTIC CELLS
@@ -296,9 +294,10 @@ step_numbers: do t = 1, step_num
                  state(i-1,j+1,4) == 1    .or. &
                  state(i,j+1,4) == 1      .or. &
                  state(i+1,j+1,4) == 1 ) .and. &
-               ( prob_0 <= prob_e )      then
+               ( prob_0 <= prob_e ))      then
                  state(i,j,4) = 1
                  state(i,j,3) = grwth_ij
+             end if
 
 
 
@@ -311,9 +310,9 @@ step_numbers: do t = 1, step_num
 
         end if
 
+    end do k_reach      
 
-
-end do
+end do step_numbers
 
 end subroutine rules_init 
 end module mod_rules 
