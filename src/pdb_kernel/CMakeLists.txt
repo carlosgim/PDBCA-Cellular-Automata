@@ -47,7 +47,7 @@ ENDIF(FCNAME STREQUAL "pgf90")
 ############################################################
 
 # Define the executable name
-SET(FOOEXE tg_kernel)
+SET(FOOEXE pdb_run.x)
 
 # Define the library name
 SET(BARLIB modules)

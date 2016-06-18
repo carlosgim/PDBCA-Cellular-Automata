@@ -1,4 +1,4 @@
-Module constants
+Module mod_constants
 
     Implicit None
 
@@ -64,4 +64,4 @@ Module constants
     Complex(KINDR), Parameter :: HALF_C    = CMPLX(HALF,    ZERO, KINDR)
     Complex(KINDR), Parameter :: HUNDRED_C = CMPLX(HUNDRED, ZERO, KINDR)
 
-End Module constants
+End Module mod_constants

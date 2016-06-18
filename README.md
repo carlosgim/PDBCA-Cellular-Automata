@@ -1,26 +1,34 @@
-# TG-Automata-Rad #
+# PDBCA - Cellular Automata #
 
-[TG-Automata-Rad] - Version 1.0 07/06/2016
+PDBCA [Population Dynamics Based on Cellular Automata] - Version 1.0 07/06/2016
 
-A simple algorithm for study a thumor growth under the effect of radiation
-   
-Written by: 
-        - Santiago W. Wiedmann [1] 
-        - Franco Fiorini [1]
-        - Carlos A. Gimenez [2]
+"A Code System based on discrete model of cellular automata for simulate population dynamics"
 
-1- Universidad Nacional del Nordeste, Corrientes, Argentina
-2- Instituto de Modelado e Innovacion Tecnologica (IMIT), Corrientes, Argentina
+Writen by: 
+        - Gimenez, C. A. [1]
+        - Fiorini, F. F. [2]
+        - Wiedmann, S. W.[2] 
+
+        
+- (1) Instituto de Modelado e Innovacion Tecnologica (IMIT), Corrientes, Argentina
+- (2) Universidad Nacional del Nordeste, Corrientes, Argentina
 
 ## Requirements ##
 
 - gfortran or another fortran compiler
 - R
 - Python 2.7
+- cmake
 
 ### HOWTO ###
 
+- Install:
 
+	$ ./setup
+
+- Run code:
+
+	$ ./pdb_run.x
 
 ## Contact ##
 
@@ -28,6 +36,8 @@ Contact: www.carlosagimenez.com
 
 ## References ##
 
- - J. E. Turner, Atoms, Radiation and Radiation Protection. Wiley (2007). 
- - Am. J. Phys. 71 (1), January 2003
+ - Journal of Physics: Conference Series 332 (2011) 012049
 
+## Licence ##
+
+MIT 2015
