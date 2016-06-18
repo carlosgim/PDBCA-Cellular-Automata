@@ -1,4 +1,4 @@
-# TG-Automata-Rad #
+# PDBCA - Cellular Automata #
 
 PDBCA [Population Dynamics Based on Cellular Automata] - Version 1.0 07/06/2016
 
@@ -24,11 +24,11 @@ Writen by:
 
 - Install:
 
-$ ./setup
+   $ ./setup
 
 - Run code:
 
-$ pdb_run.x
+   $ pdb_run.x
 
 ## Contact ##
 
