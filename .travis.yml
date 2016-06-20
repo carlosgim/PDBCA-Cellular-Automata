@@ -3,6 +3,7 @@ before_install:
 branches: 
   only: 
     - master
-install: ./setup
+install: true
+script: setup
 language: python
 
