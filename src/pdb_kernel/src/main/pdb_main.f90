@@ -10,7 +10,6 @@ program pdb_main
 
 implicit none
 integer, parameter :: dp = selected_real_kind(15,307)
-!real(kind=dp), allocatable :: x(:), x_old(:)
 character, allocatable :: x(:,:), x_old(:,:)
 integer :: i, j, k, step_num, n
 

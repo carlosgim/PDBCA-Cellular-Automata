@@ -4,6 +4,8 @@ src/pdb_kernel/cmake_install.cmake
 src/pdb_kernel/Makefile
 src/pdb_kernel/bin
 src/pdb_kernel/lib
+src/pdb_kernel/.cproject
+src/pdb_kernel/.project
 *.pyc
 *.swp
 pdb_run.x
