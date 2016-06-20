@@ -3,7 +3,7 @@ before_install:
 branches: 
   only: 
     - master
-install: true
-script: setup
-language: python
+install: ./setup
+
+language: fortran90
 
