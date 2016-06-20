@@ -1,11 +1,9 @@
-language: python
-
-branches:
-  only:
-  - master 
-  
-before_install:
-  - sudo apt-get install gfortran
-
+--- 
+before_install: 
+  - "sudo apt-get install gfortran"
+branches: 
+  only: 
+    - master
 install: ./setup
+language: python
 
