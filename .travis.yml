@@ -1,0 +1,9 @@
+before_install: 
+  - "sudo apt-get install gfortran"
+branches: 
+  only: 
+    - master
+install: ./setup
+
+language: fortran90
+

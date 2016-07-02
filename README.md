@@ -1,6 +1,6 @@
 # PDBCA - Cellular Automata #
 
-PDBCA [Population Dynamics Based on Cellular Automata] - Version 1.0 07/06/2016
+PDBCA [Population Dynamics Based on Cellular Automata] - Version 1.0 07/06/2016 -  [![Build Status](https://travis-ci.org/carlosgim/PDBCA-Cellular-Automata.svg?branch=master)](https://travis-ci.org/carlosgim/PDBCA-Cellular-Automata)
 
 "A Code System based on discrete model of cellular automata for simulate population dynamics"
 
